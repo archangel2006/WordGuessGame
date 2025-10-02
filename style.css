@@ -1,0 +1,115 @@
+/* style.css */
+
+
+/* Font and display style for complete body */
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0b5e1e, #1b8433, #7bbf77, #21ae42, #0b5e1e);
+    font-family: "times", 
+                   "Gill Sans MT", 
+                   Calibri, "Trebuchet MS",
+                 sans-serif;
+    min-height: 100vh;
+    align-items: center;
+}
+
+/* Styling for the heading */
+h1 {
+    color: #f2f8f3;
+    font-size: xxx-large;
+    padding: 2%;
+    /* width: 70vh; */
+}
+
+p{
+    font-size:x-large;
+    color:#e0f42c
+}
+/* Style for the card and border  */
+.card {
+    min-width: 30%;
+    width: 50vh;
+    min-height: 60vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+    margin: auto;
+    padding: 2%;
+    background: linear-gradient(to top left, rgba(255,255,255,0.35), rgba(255,255,255,0) 40%), 
+    linear-gradient(to bottom right, rgba(255,255,255,0.35), rgba(255,255,255,0) 40%), 
+    linear-gradient(45deg,#2f2b2b, #1b1b17,#2f2b2b);
+    background-blend-mode: screen;
+    color: white;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:active {
+    transform: scale(0.95);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.8);
+}
+.card:hover {
+    transform: scale(1.05) rotateX(3deg) rotateY(-3deg);
+    box-shadow: 0 6px 28px rgba(0,0,0,0.8);
+}
+
+
+/* Adding style for input box */
+input {
+    width: 30px;
+    padding: 1%;
+    font-size: larger;
+    text-align: center;
+    margin-left: 2%;
+}
+
+/* Adding style for display word*/
+#displayWord {
+    font-size: xx-large;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #2a7e24;
+    box-shadow: 0 0 8px rgba(34, 255, 34, 0.6);
+}
+
+button{
+    font-size: medium;
+    border: none;
+    margin-bottom:40px;
+    color: #ffffff;
+    background-color: #1b8433;
+    cursor: pointer;
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+
+    box-shadow: 0 0 12px rgba(34, 255, 34, 0.4);
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #24a01c;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(34, 255, 34, 0.6);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 12px rgba(34, 255, 34, 0.4); }
+    50% { box-shadow: 0 0 20px rgba(34, 255, 34, 0.8); }
+    100% { box-shadow: 0 0 12px rgba(34, 255, 34, 0.4); }
+}
+button:active {
+    background-color: #0f661b; 
+    transform: scale(0.97); 
+    box-shadow: 0 0 8px rgba(34, 255, 34, 0.5); 
+}
+
